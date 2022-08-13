@@ -11,6 +11,35 @@ console.log(dataArray[dataArray.length - 1]);
 // come passare in rassegna tutti i valori, le città in esso contenute
 for (i = 0; i < dataArray.length; i++) {
     // TODO document why this block is empty
-
-
+    console.log(dataArray[i]);
 }
+
+// splittare le stringhe con splt() creando così un ARRAY di elementi
+let splittedArray = cittaString.split(",");
+console.log(splittedArray);
+
+// creare una stringa unendo glie elementi partendo da un array
+let nuovaStringaCitta = splittedArray.join(",");
+console.log(nuovaStringaCitta);
+
+// aggiungere e rimuovere elementi con push() e pop() che lavorano in coda e quindi alla fine dell' array
+// aggiungere e rimuovere elementi con shift() e unshift() che lavorano in testa e quindi all'inizio dell'array
+
+// PUSH & POP
+splittedArray.push("Londra", "Dubai", "Salisburgo");
+console.log(splittedArray);
+
+splittedArray.pop();
+splittedArray.pop();
+splittedArray.pop();
+console.log(splittedArray);
+
+// SHIFT & UNSHIFT
+splittedArray.unshift("Aosta", "Barcellona", "Madrid");
+console.log(splittedArray);
+
+splittedArray.shift();
+console.log(splittedArray);
+splittedArray.shift();
+console.log(splittedArray);
+
