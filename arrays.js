@@ -9,6 +9,7 @@ console.log(dataArray[3]);
 console.log(dataArray[dataArray.length - 1]);
 
 // come passare in rassegna tutti i valori, le città in esso contenute
+let i;
 for (i = 0; i < dataArray.length; i++) {
     // TODO document why this block is empty
     console.log(dataArray[i]);

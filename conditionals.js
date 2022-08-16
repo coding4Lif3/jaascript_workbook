@@ -78,7 +78,6 @@ if (numero < 20 && (numero % 2 == 0)) {  // OPERATORE AND - se il numero è mino
 
 // SWITCH statement quando dobbiamo esaminare varie casistiche
 nome = "Luca";
-numero = 15;
 
 switch (nome) {
     case "Luca":
