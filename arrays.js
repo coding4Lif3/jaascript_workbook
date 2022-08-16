@@ -34,10 +34,12 @@ splittedArray.pop();
 splittedArray.pop();
 console.log(splittedArray);
 
-// SHIFT & UNSHIFT
+// SHIFT & UNSHIFT dove:
+// UNSHIFT sposta verso sinistra andando ad aggiungere on TOP le stringhe che andiamo ad elencare (un po come PUSH)
 splittedArray.unshift("Aosta", "Barcellona", "Madrid");
 console.log(splittedArray);
 
+// SHIFT fa il pop a sinistra e quindi eliminando dalla testa un elemento per volta.
 splittedArray.shift();
 console.log(splittedArray);
 splittedArray.shift();
