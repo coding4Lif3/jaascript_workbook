@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="fname">Nome: </label>
+            <!-- <input id="fname" type="text" onfocus="saluta()"> -->
+            <input id="fname" type="text">
+        </div>
+        <div>
+            <label for="lname">Cognome: </label>
+            <input id="lname" type="text">
+        </div>
+        <div>
+            <input id="submit" type="submit">
+        </div>
+    </form>
+
+
+    <script>
+        const form = document.querySelector("form");
+        const nome = document.getElementById("fname");
+        const cognome = document.getElementById("lname");
+        const paragrafo = document.querySelector("p");
+
+
+
+        // nome.onfocus =
+        //     function saluta() {
+        //         console.log("Ciao Pippo");
+        //     };
+
+        /* Con ARROW FUNCTION*/
+        // nome.addEventListener("focus", () => {
+        //     console.log("sono in focus dal listener");
+        // });
+
+        /* Con Function normale*/
+        nome.addEventListener("focus", function (e) {
+            console.log("Evento OnFocuus()");
+            console.log(e.target); // per vedere cosa c'è dentro l'oggetto EVENT
+        });
+
+
+    </script>
+
+</body>
+
+</html>
