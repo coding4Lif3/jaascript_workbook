@@ -1,0 +1,16 @@
+{
+    "nome": "4A",
+    "scuola": "Scuola Elementare Miao",
+    "insegnanti": [
+        {
+            "nome": "Anna",
+            "Cognome" : "Blue",
+            "materieInsegnate": ["Storia", "Italiano", "Geografia"]
+        },
+        {
+            "nome": "Anna",
+            "Cognome" : "Blue",
+            "materieInsegnate": ["Storia", "Italiano", "Geografia"]
+        }
+    ]
+}

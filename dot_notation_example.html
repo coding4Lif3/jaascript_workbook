@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+
+        /* Dot notation is generally preferred over bracket notation because it is more
+         succinct and easier to read. However there are some cases where you have 
+         to use brackets. For example, if an object property name is defined at runtime
+          then you can't use dot notation to access the value, but you can pass the 
+          name as a variable inside brackets as shown with input below: */
+
+        const person_two = {
+            name: ['Bob', 'Smith'],
+            age: 32
+        }
+
+        // if you run that in a web page you can see the difference
+        person_two['input'] = prompt('Get name or age?');
+        console.log(person_two['input']);
+        console.log(person_two.input);
+        console.log(person_two.name);
+
+        person_two['eyes'] = 'hazel';
+        person_two.farewell = function () {
+            console.log('Bye everybody!');
+        }
+
+        person_two['eyes']
+        person_two.farewell()
+
+        // One useful aspect of bracket notation is that it can be used to set 
+        // not only member values dynamically, but member names too.
+        // Let's say we wanted users to be able to store custom value types
+        // in their people data, by typing the member name and value into two text inputs.
+        // We could get those values like this:
+
+    </script>
+</body>
+
+</html>
