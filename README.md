@@ -1,2 +1,1 @@
-# frontend_developer_starter_pack
-
+# The Frontend Developer Starter Pack
