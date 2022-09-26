@@ -1,1 +1,2 @@
-# javascript_workbook
+# frontend_developer_starter_pack
+
