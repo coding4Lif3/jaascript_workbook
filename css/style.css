@@ -1,0 +1,62 @@
+/* h1 {
+    color: blueviolet !important;
+    background-color: aqua;
+} 
+
+h1 {
+    color: yellow;
+}
+
+p {
+    color: blue;
+    background-color: chartreuse;
+}
+
+*/
+
+/* Selettori di tipo o elementi e anche come lista dato dalla virgola*/
+
+h1 {
+    font-size: medium;
+    color: green;
+}
+
+p, span {
+    background-color: red;
+}
+
+/* Con l'asterisco noi andiamo a mettere il selettore universale che impone su tutto un certo stile */
+/* 
+
+
+/* Selettori di classe */
+.warning {
+    border: 1px solid red;
+}
+
+.prova.warning {
+    border: 5px solid red;
+}
+
+.prova {
+    background-color: blue;
+}
+
+
+/* Selettori per id */
+#pippo {
+    color: green;
+    background-color: unset ;
+}
+
+
+a[title] {
+    background-color: cornflowerblue;
+}
+
+a[href="contatti.html"] {
+    background-color: crimson;
+}
+
+p[class]
+
