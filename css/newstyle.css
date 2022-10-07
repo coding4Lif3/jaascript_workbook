@@ -1,0 +1,54 @@
+/* Pseudo elemento che noi non abbiamo definito ma siamo stati in grado di individuare tramite css */
+p::first-line{
+font-size: x-large;
+font-weight: bold;
+}
+
+
+
+/* Before e ater sono molto utili per tracciare delle cose da fare Prima e/o dopo*/
+.box::before {
+content: "";
+display: block;
+width: 100px;
+height: 100px;
+background-color: rebeccapurple;
+border: 2px solid black;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 2px solid black;
+}
+
+
+
+/* Combinatori: descendant, child, simblings*/
+
+/* Stiamo prendendo tutti i p che sono contenuti in classe box. Non si parla direttamente di figli ma si indicano tutti i p che si potrebbero trovare dentro boxing */
+.boxing p { 
+    color: green;
+
+}
+
+/* Diversamente potremmo anche indicare gli elementi che sono figli di un determinato elemento e quindi direttamente figli altrimenti li ignora */
+.boxing > p {
+    color: red;
+}
+
+h1 + p {
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+
+
+h1 ~ p {
+
+}
+
+

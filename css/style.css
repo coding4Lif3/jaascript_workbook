@@ -25,6 +25,11 @@ p, span {
     background-color: red;
 }
 
+img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
 /* Con l'asterisco noi andiamo a mettere il selettore universale che impone su tutto un certo stile */
 /* 
 
@@ -58,5 +63,48 @@ a[href="contatti.html"] {
     background-color: crimson;
 }
 
-p[class]
+p[class] {
+    color: magenta;
+}
+
+
+/* Prende un elemento che ha tra le classi (dentro l'attributo class) la parola box oppure ha box tra le altre classi. 
+Non va a verificare che la parola box sia presente come sottostringa di una parola */
+a[class~="box"] {
+ background-color: rgb(9, 118, 214);   
+}
+
+/* Prende un elemento che ha tra le classi (dentro l'attributo class) una parola che inizia con -box e gli applica lo stile, altrimenti non lo fa */
+a[class^="-box"] {
+    background-color: green;
+}
+
+/* Prende un elemento che ha nell'attributo class parole che contengono boxing. Non importa dove stanno, va benissimo anche come substring interna al valore di quell'attributo */
+a[class*="boxing"] {
+    background-color: magenta;
+}
+
+/* Prende un elemento che ha tra le classi (deve finire con il valore scritto dentro class) una parola che finisce con -box e gli applica lo stile, altrimenti non lo fa */
+a[class$="-box"] {
+    background-color: brown;
+}
+
+
+
+/* Pseudo Classe*/
+
+a:hover {
+    color: chartreuse;
+}
+
+
+/* Pseudo elemento*/
+
+p::first-line .pseudo {
+    font-weight: 800;
+}
+
+
+
+
 
